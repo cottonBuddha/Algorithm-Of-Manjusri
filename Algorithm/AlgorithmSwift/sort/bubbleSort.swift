@@ -15,7 +15,7 @@ func bubbleSort(inputArr: [Int]) -> [Int]{
         swapped = false
         for j in 0 ..< array.count - 1 {
             if array[j] > array[j+1] {
-                swap(&array[j+1], &array[j])
+                array.swapAt(j+1, j)
                 swapped = true
             }
         }

@@ -16,7 +16,7 @@ func shellSort(inputArr: [Int]) -> [Int] {
         var i: Int = 0
         while i + step < array.count - 1 {
             if array[i] > array[i + step] {
-                swap(&array[i], &array[i + step])
+                array.swapAt(i, i + step)
                 print(array)
             }
             i += 1

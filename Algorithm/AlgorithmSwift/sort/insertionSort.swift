@@ -16,7 +16,7 @@ func insertionSort(inputArr: [Int]) -> [Int] {
         var j: Int = 0
         while j < sortedArray.count - 1 {
             if sortedArray[j] > sortedArray[sortedArray.count - 1] {
-                swap(&sortedArray[j], &sortedArray[sortedArray.count - 1])
+                sortedArray.swapAt(j, sortedArray.count - 1)
             }
             j += 1
         }

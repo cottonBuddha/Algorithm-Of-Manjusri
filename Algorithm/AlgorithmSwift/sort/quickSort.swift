@@ -29,11 +29,11 @@ func quickSort(inputArr: [Int]) -> [Int] {
             }
             
             if i < j {
-                swap(&array[i], &array[j])
+                array.swapAt(i, j)
                 print(array)
             }
         }
-        swap(&array[low], &array[i])
+        array.swapAt(low, i)
         print(array)
 
         sort(low: low, high: i - 1)

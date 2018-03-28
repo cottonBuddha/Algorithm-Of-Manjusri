@@ -31,9 +31,15 @@ func singleNumber(nums: [Int]) -> Int {
 
 //print(yanghui(hang: 6))
 
-print(singleNumber(nums: [1,4,9,7,5,7,9,4,5]))
+print(singleNumber(nums: [0,4,9,7,5,7,9,4,5]))
 
 
+func swap(a: Int , b: Int) -> (Int,Int){
+    //    a = a^b
+    //    b = a^b
+    //    a = a^b
+    return (a,b)
+}
 
 
 
